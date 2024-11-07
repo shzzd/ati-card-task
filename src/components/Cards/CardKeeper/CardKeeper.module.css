@@ -1,0 +1,67 @@
+p {
+    margin: 0;
+}
+
+.wrapper {
+    /* width: 100%; */
+    border-radius: 0.5rem;
+    background-color: var(--grey1);
+    padding: 0.5rem;
+}
+
+.wrapper > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.wrapper > div:nth-child(1) > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.iconMain {
+    margin-bottom: -0.2rem;
+    padding: 0.6rem 0.55rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.wrapper > div:nth-child(1) > div:nth-child(2) {
+    background-color: var(--grey2);
+    padding: 0rem 0.5rem 0.1rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    overflow-y: scroll;
+    height: 78vh;
+    font-size: 0.9rem;
+}
+
+.cards::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.7rem;
+}
+
+.cards::-webkit-scrollbar-track {
+    background: rgb(210, 210, 210);
+    border: 1px var(--grey2) solid;
+    border-radius: 20px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 20px;
+    border: none;
+}
